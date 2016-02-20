@@ -128,7 +128,8 @@ fn parse(version: &str) -> Version {
 
 /// Displays the usage message.
 fn usage(program: &str, options: &Options) {
-    let b = format!("Usage: {} [OPTIONS] VERSION [VERSION]", program);
+    let b = format!("Usage: {} [OPTIONS] VERSION [VERSION]\n{}", program,
+                    "Edit and compare semantic version numbers.");
     let _ = writeln!(io::stderr(), "{}", options.usage(&b));
 
     process::exit(0);
