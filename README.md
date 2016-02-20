@@ -24,6 +24,42 @@ Options:
     -v, --version       Displays the version of this program.
 ```
 
+Examples
+--------
+
+### Increment a Version Number
+
+```bash
+# 2.0.0
+ver -1 1.2.3
+
+# 1.3.0
+ver -2 1.2.3
+
+# 1.2.4
+ver -3 1.2.3
+```
+
+### Comparing Two Version Numbers
+
+```bash
+# exit: 0
+ver 1.2.3 -e 1.2.3
+ver 1.2.3 -l 1.2.4
+ver 1.2.4 -g 1.2.3
+
+ver 1.2.3 -le 1.2.3
+ver 1.2.0 -le 1.2.3
+
+ver 1.2.3 -ge 1.2.3
+ver 1.2.3 -ge 1.2.0
+
+# exit: 1
+ver 1.2.3 -e 2.2.3
+ver 1.2.4 -l 1.2.3
+ver 1.2.3 -g 1.2.4
+```
+
 Installation
 ------------
 
