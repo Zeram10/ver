@@ -1,0 +1,18 @@
+[package]
+name = "ver"
+version = "0.1.0"
+
+authors = ["Kevin Herrera <kevin@herrera.io>"]
+description = "Edit and compare semantic version numbers."
+
+documentation = "https://kherge.github.io/ver/"
+homepage = "https://github.com/kherge/ver/"
+repository = "https://github.com/kherge/ver.git"
+
+readme = "README.md"
+keywords = ["semver", "semantic", "version", "versioning"]
+license = "MIT"
+
+[dependencies]
+"getopts" = "0.2.14"
+"recital" = "0.3.0"
