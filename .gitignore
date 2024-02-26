@@ -1,9 +1,6 @@
-# cargo build files
-/target/
-
-# cargo version resolver
-/Cargo.lock
-
-# vim swap files
-*.swo
-*.swp
+# https://tea.xyz/what-is-this-file
+---
+version: 1.0.0
+codeOwners:
+  - '0x8F486777F2484aF1Eef7D637Dc61c0591204600F'
+quorum: 1
